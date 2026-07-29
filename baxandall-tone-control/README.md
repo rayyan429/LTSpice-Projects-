@@ -5,7 +5,7 @@
 
 ## Overview
 
-The Baxandall Tone Control shapes the tone of an audio signal by splitting it into a low-pass "bass" path and a high-pass "treble" path, then mixing the two back together at the output. I built this after working through n-th order low-pass filters in ECEN 214 — I wanted to see what happens when you combine an LPF and HPF into one network instead of treating them separately, since that's closer to how tone controls actually work in real audio gear.
+The Baxandall Tone Control Circuit shapes the tone of an audio signal by splitting it into a low-pass "bass" path and a high-pass "treble" path, then mixing the two back together at the output. I built this after working through n-th order low-pass filters in ECEN 214 — I wanted to see what happens when you combine an LPF and HPF into one network instead of treating them separately, since that's closer to how tone controls actually work in real audio gear.
 
 What makes this circuit interesting is that it doesn't isolate frequencies so much as *reshape* the balance between them. Turning the "bass" pot doesn't add bass — it changes how much of the low end gets attenuated relative to everything else. That's a different way of thinking about filtering than the strict pass/reject filters I'd seen in coursework, and it took a bit of a mental shift to model correctly.
 
